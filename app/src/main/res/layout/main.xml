@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	>
+
+	<!-- 第一个现形布局区域，设置区，参数设置 -->
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="116dp"
+		android:layout_marginTop="5dp"
+		android:layout_marginBottom="5dp"
+		android:layout_margin="3dip"
+		android:background="#202020"
+		android:tag="configure block"
+		android:baselineAligned="false">
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_weight="1"
+			>
+
+			<TextView
+				android:id="@+id/baudRate"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:layout_weight="1.8"
+				android:gravity="center|bottom"
+				android:text="@string/baud_rate_str" />
+
+			<Spinner
+				android:id="@+id/baudRateValue"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:layout_marginBottom="5dp"
+				android:layout_marginLeft="5dp"
+				android:layout_marginRight="5dp"
+				android:layout_marginTop="5dp"
+				android:layout_weight="1"
+				android:background="#31a43e"
+				android:gravity="center_horizontal|center"
+				android:inputType="none" />
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_weight="1"
+			>
+			<TextView android:text="@string/stop_bit"
+				android:id="@+id/stopBit"
+				android:layout_height="fill_parent"
+				android:layout_width="fill_parent"
+				android:gravity="center|bottom"
+				android:layout_weight="1.8"
+				>
+			</TextView>
+
+			<Spinner
+				android:id="@+id/stopBitValue"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:layout_marginBottom="5dp"
+				android:layout_marginLeft="5dp"
+				android:layout_marginRight="5dp"
+				android:layout_marginTop="5dp"
+				android:layout_weight="1"
+				android:background="#31a43e"
+				android:gravity="center_horizontal|center"
+				android:inputType="none" />
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_weight="1"
+			>
+			<TextView android:text="@string/data_bit"
+				android:id="@+id/dataBit"
+				android:layout_height="fill_parent"
+				android:layout_width="fill_parent"
+				android:gravity="center|bottom"
+				android:layout_weight="1.8"
+				>
+			</TextView>
+
+			<Spinner
+				android:id="@+id/dataBitValue"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:layout_marginBottom="5dp"
+				android:layout_marginLeft="5dp"
+				android:layout_marginRight="5dp"
+				android:layout_marginTop="5dp"
+				android:layout_weight="1"
+				android:background="#31a43e"
+				android:gravity="center_horizontal|center"
+				android:inputType="none" />
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_weight="1"
+			>
+			<TextView android:text="@string/parity_str"
+				android:id="@+id/parity"
+				android:layout_height="fill_parent"
+				android:layout_width="fill_parent"
+				android:gravity="center|bottom"
+				android:layout_weight="1.8"
+				>
+			</TextView>
+
+			<Spinner
+				android:id="@+id/parityValue"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:layout_marginBottom="5dp"
+				android:layout_marginLeft="5dp"
+				android:layout_marginRight="5dp"
+				android:layout_marginTop="5dp"
+				android:layout_weight="1"
+				android:background="#31a43e"
+				android:gravity="center_horizontal|center"
+				android:inputType="none" />
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_weight="1"
+			>
+			<TextView android:text="@string/flow"
+				android:id="@+id/flowControl"
+				android:layout_height="fill_parent"
+				android:layout_width="fill_parent"
+				android:gravity="center|bottom"
+				android:layout_weight="1.8"
+				>
+			</TextView>
+
+			<Spinner android:id="@+id/flowControlValue"
+				android:layout_height="fill_parent"
+				android:layout_width="fill_parent"
+				android:layout_marginTop="5dp"
+				android:layout_marginBottom="5dp"
+				android:layout_marginRight="5dp"
+				android:layout_marginLeft="5dp"
+				android:gravity="center"
+				android:inputType="none"
+				android:background="#31a43e"
+				android:layout_weight="1"
+				/>
+		</LinearLayout>
+
+
+	</LinearLayout>
+	<!-- 写数据的区域 -->
+	<LinearLayout
+
+		android:layout_width="fill_parent"
+		android:layout_height="0dp"
+		android:layout_margin="0dp"
+		android:background="#202020"
+		android:tag="Write block"
+		android:weightSum="1">
+
+		<EditText
+			android:id="@+id/WriteValues"
+			android:layout_width="0dp"
+			android:layout_height="fill_parent"
+			android:layout_margin="3dp"
+			android:background="#31a43e"
+			android:editable="true"
+			android:gravity="left"
+			android:maxLength="255"
+			android:layout_weight="1.00"
+			android:hint="@string/enter" />
+		<Button android:id="@+id/WriteButton"
+			android:layout_height="fill_parent"
+			android:layout_width="wrap_content"
+			android:layout_margin="3dp"
+			android:gravity="center"
+			android:scaleType="centerInside"
+			android:background="@drawable/button_pattern"
+			android:text="@string/write"
+			/>
+
+
+	</LinearLayout>
+	<!--<LinearLayout
+
+		android:layout_width="fill_parent"
+		android:layout_height="85dp"
+		android:layout_margin="3dp"
+		android:background="#202020"
+		android:weightSum="1">
+
+		<EditText
+			android:id="@+id/IPValues"
+			android:layout_width="0dp"
+			android:layout_height="fill_parent"
+			android:layout_margin="3dp"
+			android:background="#31a43e"
+			android:editable="true"
+			android:gravity="left"
+			android:maxLength="255"
+			android:layout_weight="0.96"
+			android:text="@string/ip" />
+		<TextView android:id="@+id/SetIPButton"
+			android:layout_height="fill_parent"
+			android:layout_width="wrap_content"
+			android:layout_margin="3dp"
+			android:gravity="center"
+			android:background="#31a43e"
+			android:text="@string/setip"
+			android:layout_weight="0.04" />
+
+
+	</LinearLayout>-->
+	<!--新建上传数据和显示回馈的区域-->
+	<LinearLayout
+
+		android:layout_width="fill_parent"
+		android:layout_height="0dp"
+		android:layout_margin="3dip"
+		android:layout_weight="1.08"
+		android:background="#202020"
+		android:tag="Write block"
+		android:weightSum="1">
+
+
+		<EditText
+			android:id="@+id/sendText"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_margin="3dp"
+			android:background="#31a43e"
+			android:focusableInTouchMode="false"
+			android:gravity="left"
+			android:layout_gravity="center_vertical"
+			android:hint="@string/fankui" />
+
+	</LinearLayout>
+	<!-- 显示读取数据的区域-->
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="140dp"
+		android:layout_marginTop="5dp"
+		android:layout_marginBottom="5dp"
+		android:layout_margin="3dip"
+		android:orientation="vertical"
+		android:background="#202020"
+		android:tag="Read block"
+		android:weightSum="1">
+
+
+		<EditText
+			android:id="@+id/ReadValues"
+			android:layout_width="fill_parent"
+			android:layout_height="80dp"
+			android:layout_margin="3dp"
+			android:background="#31a43e"
+			android:focusableInTouchMode="false"
+			android:hint="设备未连接..."
+			android:gravity="left"
+			/>
+
+		<Button android:id="@+id/configButton"
+
+			android:layout_height="50dp"
+			android:layout_width="fill_parent"
+			android:layout_margin="0dp"
+			android:background="@drawable/button_pattern"
+			android:text="@string/config" />
+
+	</LinearLayout>
+
+</LinearLayout>
+
