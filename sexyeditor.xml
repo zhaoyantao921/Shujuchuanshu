@@ -1,0 +1,23 @@
+<application>
+  <component name="SexyEditor">
+    <option name="configs">
+      <list>
+        <BackgroundConfiguration>
+          <option name="fileNames">
+            <array>
+              <option value="F:\androidStudiotupian\79b169587a3561cdfc86d66a77bac04a.jpeg" />
+              <option value="F:\androidStudiotupian\7e1d753c270f65f0423ea9340dc3308a.jpg" />
+              <option value="F:\androidStudiotupian\8a22a4fa361d605bb33b95a4b1dc3f0d.jpg" />
+              <option value="F:\androidStudiotupian\b513ea973cd99437e7fbc9afa44adf49.jpg" />
+              <option value="F:\androidStudiotupian\b54cc696744eb220c31facc8b90a9938.jpg" />
+            </array>
+          </option>
+          <option name="position" value="4" />
+          <option name="shrink" value="true" />
+          <option name="slideshow" value="true" />
+          <option name="slideshowPause" value="300000" />
+        </BackgroundConfiguration>
+      </list>
+    </option>
+  </component>
+</application>

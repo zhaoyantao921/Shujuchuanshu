@@ -1,0 +1,9 @@
+<application>
+  <component name="HttpConfigurable">
+    <option name="USE_PROXY_PAC" value="true" />
+    <option name="PROXY_HOST" value="mirrors.opencas.cn" />
+    <option name="PROXY_EXCEPTIONS" value="5a0c26e4a475.repository.bugly.qq.com" />
+    <option name="USE_PAC_URL" value="true" />
+    <option name="PAC_URL" value="5a0c26e4a475.repository.bugly.qq.com" />
+  </component>
+</application>
