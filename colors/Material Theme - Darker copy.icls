@@ -945,6 +945,11 @@
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
+    <option name="LOGCAT_ASSERT_OUTPUT">
+      <value>
+        <option name="FOREGROUND" value="ff690a" />
+      </value>
+    </option>
     <option name="LOGCAT_DEBUG_OUTPUT">
       <value>
         <option name="FOREGROUND" value="36603" />
