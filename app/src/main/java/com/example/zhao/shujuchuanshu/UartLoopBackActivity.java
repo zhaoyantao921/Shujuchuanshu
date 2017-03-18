@@ -410,8 +410,7 @@ public class UartLoopBackActivity extends Activity {
 		}
 	}
 
-	protected void onPause() {
-		super.onPause();
+	protected void onPause() {super.onPause();
 	}
 
 	protected void onStop() {
@@ -419,7 +418,7 @@ public class UartLoopBackActivity extends Activity {
 			READ_ENABLE = false;
 		}
 		super.onStop();
-	}
+}
 
 	protected void onDestroy() {
 		if (uartInterface != null) {
